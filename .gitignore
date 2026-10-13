@@ -1,0 +1,13 @@
+# Compiled Java bytecode
+*.class
+bin/
+*.jar.bak
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+
+# VS Code workspace state
+.vscode/.ropeproject
