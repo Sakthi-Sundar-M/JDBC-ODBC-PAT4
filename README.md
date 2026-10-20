@@ -4,7 +4,7 @@ A dual-stack database-backed access control web application developed for **DBMS
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This repository demonstrates enterprise relational database connectivity using two standard industry paradigms:
 1. **JDBC (Java Database Connectivity)**: A pure Java web application (`BiometricApp.java`) utilizing the **Type 4 Thin Driver** (`ojdbc6.jar`) and an embedded HTTP server running on port `9090`.
@@ -12,7 +12,7 @@ This repository demonstrates enterprise relational database connectivity using t
 
 ---
 
-## 🗄️ Database Schema & Relational Design
+## Database Schema & Relational Design
 
 The database maintains two interrelated tables hosted in **Oracle SQL*Plus**:
 
@@ -37,7 +37,7 @@ Maintains hardware gate readers and network endpoints.
 
 ---
 
-## 🚀 Quick Start & Setup
+## Quick Start & Setup
 
 ### Step 1: Initialize Database in Oracle SQL*Plus
 Run the included SQL script [database_setup.sql](database_setup.sql):
@@ -81,21 +81,21 @@ python app.py
 
 ---
 
-## 🧪 Verification & Test Cases
+## Verification & Test Cases
 
 The application processes user credentials against in-engine database constraints:
 
 | Test Case | College ID | Sample User | In-Engine Status | Resulting Action |
 | :--- | :---: | :--- | :---: | :--- |
-| **Active Student** | `1244` | Sakthi Sundar | `ACTIVE` | ✅ **ACCESS GRANTED** (Turnstile unlatched) |
-| **Active Faculty** | `6055` | Ramkumar | `ACTIVE` | ✅ **ACCESS GRANTED** (Unrestricted 24/7 clearance) |
-| **Suspended Account** | `2345` | Hariharan | `SUSPENDED` | ❌ **ACCESS DENIED** (Security lockout alert) |
-| **Alumni Visitor** | `5463` | Sriram | `ALUMNI` | ⚠️ **RESTRICTED PASS** (Redirect to Visitor Desk) |
-| **Unregistered ID** | `9999` | Unknown | *N/A* | ❌ **RECORD NOT FOUND** (Biometric rejection) |
+| **Active Student** | `1244` | Sakthi Sundar | `ACTIVE` | **ACCESS GRANTED** (Turnstile unlatched) |
+| **Active Faculty** | `6055` | Ramkumar | `ACTIVE` | **ACCESS GRANTED** (Unrestricted 24/7 clearance) |
+| **Suspended Account** | `2345` | Hariharan | `SUSPENDED` | **ACCESS DENIED** (Security lockout alert) |
+| **Alumni Visitor** | `5463` | Sriram | `ALUMNI` | **RESTRICTED PASS** (Redirect to Visitor Desk) |
+| **Unregistered ID** | `9999` | Unknown | *N/A* | **RECORD NOT FOUND** (Biometric rejection) |
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 ├── database_setup.sql         # Complete DDL & DML initialization script for Oracle
@@ -112,7 +112,7 @@ The application processes user credentials against in-engine database constraint
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 * **Student Name**: M. Sakthi Sundar
 * **Register Number**: 25BCE1244
